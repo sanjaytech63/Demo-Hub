@@ -18,6 +18,11 @@ const buildWebsite = (url: string, title: string, description: string): Website 
 
 const defaultWebsites: Website[] = [
   buildWebsite(
+    'https://fast-save-alpha.vercel.app/',
+    'Fast Save',
+    'Quick save and download tool.'
+  ),
+  buildWebsite(
     'https://youtube-thumbnail-download-three.vercel.app/',
     'YouTube Thumbnail Downloader',
     'Download YouTube video thumbnails easily.'
@@ -52,11 +57,7 @@ const defaultWebsites: Website[] = [
     'User Data',
     'User data demo / profile app.'
   ),
-  buildWebsite(
-    'https://fast-save-alpha.vercel.app/',
-    'Fast Save',
-    'Quick save and download tool.'
-  ),
+
   buildWebsite(
     'https://space-around-orcin.vercel.app/',
     'Space Around',
