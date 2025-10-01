@@ -22,7 +22,7 @@ const WebsiteGrid = ({ websites, onWebsiteSelect, onAddWebsite }: WebsiteGridPro
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
       >
         <AnimatePresence>
-          {websites.map((website) => (
+          {websites?.map((website) => (
             <WebsiteCard
               key={website.id}
               website={website}

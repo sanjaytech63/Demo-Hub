@@ -1,4 +1,3 @@
-// components/SearchBar.tsx
 import { useState } from 'react';
 import { useWebsiteStore } from '../stoer/websiteStore';
 

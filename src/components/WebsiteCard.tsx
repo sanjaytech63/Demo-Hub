@@ -1,4 +1,3 @@
-// components/WebsiteCard.tsx
 import { motion } from 'framer-motion';
 import { Website } from '../types';
 import { useWebsiteStore } from '../stoer/websiteStore';
@@ -21,7 +20,6 @@ const WebsiteCard = ({ website, onSelect }: WebsiteCardProps) => {
       transition={{ duration: 0.2 }}
       className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow border border-gray-200 dark:border-gray-700"
     >
-      {/* Preview Image/Iframe */}
       <div 
         className="h-40 bg-gray-200 dark:bg-gray-700 relative cursor-pointer"
         onClick={() => onSelect(website)}
@@ -37,7 +35,6 @@ const WebsiteCard = ({ website, onSelect }: WebsiteCardProps) => {
         </div>
       </div>
       
-      {/* Card Content */}
       <div className="p-4">
         <div className="flex items-start justify-between mb-2">
           <div className="flex items-center space-x-3">
