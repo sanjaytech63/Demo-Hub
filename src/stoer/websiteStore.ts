@@ -70,7 +70,7 @@ export const useWebsiteStore = create<WebsiteStore>()(
     (set, get) => ({
       websites: defaultWebsites,
       addWebsite: (website) => {
-        const id = Math.random().toString(36).substring(7);
+        const id = Math.random().toString(36).substring(10);
         const favicon = `https://www.google.com/s2/favicons?domain=${new URL(website.url).hostname}&sz=64`;
         set((state) => ({
           websites: [...state.websites, { ...website, id, favicon, createdAt: new Date() }],
