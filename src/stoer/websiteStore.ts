@@ -52,6 +52,16 @@ const defaultWebsites: Website[] = [
     'User Data',
     'User data demo / profile app.'
   ),
+  buildWebsite(
+    'https://fast-save-alpha.vercel.app/',
+    'Fast Save',
+    'Quick save and download tool.'
+  ),
+  buildWebsite(
+    'https://space-around-orcin.vercel.app/',
+    'Space Around',
+    'Space exploration and information app.'
+  ),
 ];
 
 export const useWebsiteStore = create<WebsiteStore>()(

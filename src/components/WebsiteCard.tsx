@@ -20,7 +20,7 @@ const WebsiteCard = ({ website, onSelect }: WebsiteCardProps) => {
       transition={{ duration: 0.2 }}
       className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow border border-gray-200 dark:border-gray-700"
     >
-      <div 
+      <div
         className="h-40 bg-gray-200 dark:bg-gray-700 relative cursor-pointer"
         onClick={() => onSelect(website)}
       >
@@ -34,13 +34,13 @@ const WebsiteCard = ({ website, onSelect }: WebsiteCardProps) => {
           <span className="text-white font-medium">Click to preview</span>
         </div>
       </div>
-      
+
       <div className="p-4">
         <div className="flex items-start justify-between mb-2">
           <div className="flex items-center space-x-3">
             <img
               src={website.favicon}
-              alt=""
+              alt={website.id}
               className="w-6 h-6 rounded"
               onError={(e) => {
                 (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iY3VycmVudENvbG9yIj48cGF0aCBkPSJNMjEgMTZ2NGEyIDIgMCAwMS0yIDJINGEyIDIgMCAwMS0yLTJ2LTRhMiAyIDAgMDEyLTJoMTZhMiAyIDAgMDEyIDJ6TTQgNnY2aDE2VjZINHoiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==';
@@ -63,11 +63,11 @@ const WebsiteCard = ({ website, onSelect }: WebsiteCardProps) => {
             )}
           </button>
         </div>
-        
+
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">
           {website.description || 'No description provided'}
         </p>
-        
+
         <div className="flex justify-between items-center">
           <a
             href={website.url}
@@ -81,7 +81,7 @@ const WebsiteCard = ({ website, onSelect }: WebsiteCardProps) => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
             </svg>
           </a>
-          
+
           <button
             onClick={(e) => {
               e.stopPropagation();
